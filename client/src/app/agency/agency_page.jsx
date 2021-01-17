@@ -98,7 +98,7 @@ const AgencyPage = () => {
 				onAgencyUpdated={(updatedAgency) => {
 					const array = [];
 					for (const agency of agencies) {
-						if (agency._id === updatedAgency._id) {
+						if (agency.id === updatedAgency.id) {
 							array.push(updatedAgency);
 							continue;
 						}
@@ -113,7 +113,7 @@ const AgencyPage = () => {
 				api={api}
 				onHidden={() => setShowConfModal(false)}
 				onAgencyDeleted={(id) =>
-					setAgencies(agencies.filter(({ _id }) => _id !== id))
+					setAgencies(agencies.filter(({ id }) => id !== id))
 				}
 			/>
 			<div className="page agency-page">
@@ -182,7 +182,7 @@ const AgencyPage = () => {
 					<tbody>
 						{agencies.map((agency, i) => (
 							<Agency
-								key={agency._id}
+								key={agency.id}
 								name={agency.name}
 								address={agency.address}
 								wilaya={agency.wilaya}

@@ -18,9 +18,9 @@ const Modal = ({
 	const modalRef = useRef();
 	const submitHandler = async (e) => {
 		e.preventDefault();
-		if (agency?._id) {
+		if (agency?.id) {
 			try {
-				const data = await api.update(agency._id, {
+				const data = await api.update(agency.id, {
 					name,
 					address,
 					wilaya,

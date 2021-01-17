@@ -13,8 +13,8 @@ const ConfirmationModal = ({
 	const submitHandler = async (e) => {
 		e.preventDefault();
 		try {
-			await api.remove(agency._id);
-			onAgencyDeleted(agency._id);
+			await api.remove(agency.id);
+			onAgencyDeleted(agency.id);
 			jquery(modalRef.current).modal("hide");
 		} catch (err) {
 			console.log(err);
