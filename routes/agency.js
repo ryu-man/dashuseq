@@ -11,7 +11,6 @@ router.get('/agency', async (req, res) => {
         // Retrieve agencies list
         // Sorted createdAt ascendant
         const agencies = await Agency.findAll({ order: [["createdAt", "ASC"]] })
-        console.log(agencies)
         if (agencies) {
             // Send the list to the client
             res.json(agencies)
