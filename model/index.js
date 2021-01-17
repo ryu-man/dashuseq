@@ -1,7 +1,7 @@
 
 const { Sequelize } = require("sequelize")
 
-const sequelize = new Sequelize('postgres://user:user@localhost:5432/dashudb')
+const sequelize = new Sequelize(process.env.DB_URI)
 
 exports.User = require('./user')(sequelize)
 exports.Agency = require('./agency')(sequelize)
