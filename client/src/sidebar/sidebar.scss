@@ -1,0 +1,21 @@
+.sidebar {
+	padding: 14% 4%;
+    padding-top: 32%;
+	font-weight: 700;
+	color: #A3B0BD;
+    font-size: 1.1em;
+	.item {
+		padding: 1em 1em 1em 2em;
+		display: flex;
+		align-items: center;
+        gap: 1em;
+        cursor: pointer;
+
+        &:hover{
+            background-color: #00000018;
+        }
+		&.active {
+			color: var(--primaryColor);
+		}
+	}
+}

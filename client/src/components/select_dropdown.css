@@ -1,0 +1,25 @@
+.select-dropdown {
+	position: relative;
+
+	flex: 1;
+}
+.select-dropdown input{
+	padding-right: 10%;
+	padding-left: 10%;
+}
+.select-dropdown .bi-funnel {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 10%;
+	color: #ced4da;
+}
+.select-dropdown .bi-chevron-down {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 10%;
+	color: #ced4da;
+}

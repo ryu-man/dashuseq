@@ -1,0 +1,53 @@
+.login {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	height: 100%;
+	.side {
+		box-shadow: 2px 0px 6px 0px #0000000f;
+		padding: 1em 15%;
+		width: 36vw;
+		font-weight: 500;
+		z-index: 1;
+
+		.app-name {
+			padding: 1em 0;
+			font-size: 4em;
+			font-weight: 700;
+			color: var(--primaryColor);
+			text-align: center;
+		}
+	}
+	.background-wrapper {
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.form {
+		.form-group {
+			.icon-wrapper {
+				position: relative;
+				input{
+					padding-right: 3em;
+				}
+				i{
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					width: 3em;
+					color: #CED4DA;
+				}
+			}
+			&.options {
+				font-size: 0.8em;
+			}
+			> label {
+				font-size: 0.7em;
+				color: #abb6c3;
+			}
+		}
+	}
+}
