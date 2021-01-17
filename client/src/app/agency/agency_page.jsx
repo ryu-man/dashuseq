@@ -113,7 +113,7 @@ const AgencyPage = () => {
 				api={api}
 				onHidden={() => setShowConfModal(false)}
 				onAgencyDeleted={(id) =>
-					setAgencies(agencies.filter(({ id }) => id !== id))
+					setAgencies(agencies.filter(({ id:_id }) => _id !== id))
 				}
 			/>
 			<div className="page agency-page">
